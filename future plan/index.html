@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPS Compass</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="app">
+      <div id="setup">
+        <button id="save-btn">Save Location</button>
+        <button id="nav-btn" style="display: none;">Navigate</button>
+        <button id="clear-btn" style="display: none; background-color: #f44336;">Clear Location</button>
+        <div id="status-msg" style="margin-top: 15px;"></div>
+        <div id="coords-msg" style="margin-top: 5px; font-size: 0.9em; color: #aaa;"></div>
+      </div>
+      
+      <div id="tracking" style="display: none;">
+        <button id="stop-btn" style="background-color: #f44336; margin-bottom: 20px;">Stop Navigating</button>
+        <div id="compass-status" style="margin-bottom: 15px; color: #ff9800; font-weight: bold;"></div>
+        <div id="arrow-container">
+          <div id="arrow">↑</div>
+        </div>
+        <div id="distance">-- m</div>
+        <div id="direction">--</div>
+        <div id="gps-accuracy" style="margin-top: 20px; font-size: 1rem; color: #aaaaaa;">GPS Accuracy: -- m</div>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
